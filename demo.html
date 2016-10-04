@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Custom Multifile Upload
+            </title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+                <link href="css/multifile-upload.css" rel="stylesheet">
+                </link>
+            </link>
+        </meta>
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-xs-6 col-xs-offset-3">
+                <form action="php/upload.php" enctype="multipart/form-data" id="multifile-form" method="post" role="form">
+                    <fieldset>
+                        <div class="row col-xs-12">
+                            <h1>
+                                Sample Form
+                            </h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group has-feedback">
+                                    <label class=" control-label" for="first_name">
+                                        First Name
+                                    </label>
+                                    <input class="form-control" id="first_name" name="first_name" type="text">
+                                        <span class="help-block with-errors">
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group has-feedback">
+                                    <label class=" control-label" for="last_name">
+                                        Last Name
+                                    </label>
+                                    <input class="form-control" id="last_name" name="last_name" type="text">
+                                        <span class="help-block with-errors">
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group has-feedback">
+                                    <label class=" control-label" for="email">
+                                        Email
+                                    </label>
+                                    <input class="form-control" id="email" name="email" type="text">
+                                        <span class="help-block with-errors">
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group has-feedback">
+                                    <label class=" control-label" for="phone">
+                                        Phone
+                                    </label>
+                                    <input class="form-control" id="phone" name="phone" type="text">
+                                        <span class="help-block with-errors">
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label class="col-xs-12 control-label" for="files">
+                                        Related Documents to Attach to Form
+                                    </label>
+                                    <div class="col-xs-12">
+                                        <div class="multifile-input">
+                                            <label class="btn btn-default btn-file">
+                                                Choose Files
+                                                <input accept=".jpg,.png,.jpeg,.gif,.txt,.xml,.pdf,.xlsx,.docx,.doc" class="multifile" id="files" multiple="" name="files[]" style="display: none;" type="file">
+                                                </input>
+                                            </label>
+                                            <output>
+                                                No Files Choosen
+                                            </output>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                            <br>
+                                <div class="col-md-4 col-md-offset-4 margin-top-60">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-block" type="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </br>
+                        </br>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="js/multifile-upload.js">
+        </script>
+        <script src="js/script.js">
+        </script>
+    </body>
+</html>

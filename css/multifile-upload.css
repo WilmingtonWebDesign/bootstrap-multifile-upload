@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+	padding: 10px;
+}
+.file-upload_result {
+    display: block;
+    padding: 14px;
+}
+.multifile-remove{
+	font-size: 70%;
+	color: rgba(6, 6, 6, 0.26);
+	margin-left: 5px;
+}
+.multifile-remove:hover{
+	cursor: pointer;
+}
