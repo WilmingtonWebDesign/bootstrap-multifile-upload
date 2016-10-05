@@ -1,5 +1,5 @@
 /*
- * multifile-upload v1.0
+ * multifile-upload v1.0 (https://www.impactmedianc.com/)
  * Copyright Impact Media 2016 Drew Denstedt
  */
 
